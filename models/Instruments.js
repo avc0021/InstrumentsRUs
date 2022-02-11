@@ -40,4 +40,4 @@ Instrument.init(
   }
 );
 
-module.exports = User;
+module.exports = Instrument;
