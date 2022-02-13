@@ -11,12 +11,12 @@ router.get('/', (req, res) => {
       'price',
       'filename',
     ],
-      include: [
-        {
-          model: User,
-          attributes:['email']
-        }
-    ]
+    //   include: [
+    //     {
+    //       model: User,
+    //       attributes:['id','username','email', 'password']
+    //     }
+    // ]
   })
   .then(dbPostData => {
     const posts = dbPostData.map(post => post.get({ plain: true }));
