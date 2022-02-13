@@ -1,26 +1,22 @@
-const { Painting } = require('../models');
+const { Instruments } = require('../models');
 
-const paintingdata = [
+const instrumentDetails = [
   {
-    title: 'Blossoming Apricot',
-    artist: 'LedyX',
-    exhibition_date: 'March 30, 2018',
-    gallery_id: 1,
-    filename: '01-blossoming-apricot.jpg',
-    description:
-      'Branches with pink apricot blossoms against a blue background.',
+    instrument: 'Tenor Saxophone',
+    brand_name: 'Yamaha Custom Z',
+    price: 5100,
+    filename: 'tenorsax.png',
+    user_id: 1
   },
   {
-    title: 'Winter Home',
-    artist: 'Smit',
-    exhibition_date: 'January 20, 2018',
-    gallery_id: 4,
-    filename: '09-winter-home.jpg',
-    description:
-      'Log cabin blanketed in heavy white snow with tall snow covered pine trees in the background.',
+    instrument: 'Banjo',
+    brand_name: 'Epiphone MB-100 First Pick Banjo',
+    price: 250,
+    filename: 'banjo.png',
+    user_id: 1
   },
 ];
 
-const seedPaintings = () => Painting.bulkCreate(paintingdata);
+const seedInstruments = () => Instruments.bulkCreate(instrumentDetails);
 
-module.exports = seedPaintings;
+module.exports = seedInstruments;

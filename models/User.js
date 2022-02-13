@@ -12,9 +12,8 @@ class User extends Model {
 }
 
 User.init(
-  {
-    
-    id: {
+  { 
+      id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
@@ -29,9 +28,7 @@ User.init(
       email: {
         type: DataTypes.STRING,
         allowNull: false,
-        
         unique: true,
-        
         validate: {
           isEmail: true
         }
@@ -41,7 +38,6 @@ User.init(
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          
           len: [4]
         }
       }
@@ -49,18 +45,15 @@ User.init(
 
   {
     hooks: {
-        
-        async beforeCreate(newUserData) {
+      async beforeCreate(newUserData) {
           newUserData.password = await bcrypt.hash(newUserData.password, 10);
           return newUserData;
-        },
-        
-  async beforeUpdate(updatedUserData) {
-    updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
-    return updatedUserData;
-  }
       },
-
+      async beforeUpdate(updatedUserData) {
+        updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+        return updatedUserData;
+      }
+    },
     sequelize,
     timestamps: false,
     freezeTableName: true,
