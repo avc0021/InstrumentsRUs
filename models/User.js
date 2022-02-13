@@ -15,13 +15,9 @@ User.init(
   {
     
     id: {
-        
         type: DataTypes.INTEGER,
-        
         allowNull: false,
-        
         primaryKey: true,
-        
         autoIncrement: true
       },
       
@@ -49,11 +45,9 @@ User.init(
           len: [4]
         }
       }
-
   },
 
   {
-
     hooks: {
         
         async beforeCreate(newUserData) {
