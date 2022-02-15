@@ -31,7 +31,7 @@ Instrument.init(
           isDecimal: true
         }
     },
-    filename: {
+    file_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -48,7 +48,7 @@ Instrument.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user'
+    modelName: 'instruments'
   }
 );
 

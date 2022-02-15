@@ -10,16 +10,16 @@
 <body>
     <div class="wrapper">
         
-        <header>
+        {{!-- <header> --}}
 
-            <h1>
+            {{!-- <h1>
                 <a href="/">Instruments R Us!</a>
-            </h1>
+            </h1> --}}
 
-            <nav>
+            {{!-- <nav>
                 <a href ="/login">login</a>
             </nav>
-        </header>
+        </header> --}}
 
         <main>
             {{> navbar}}
@@ -27,14 +27,15 @@
             {{{body}}}
         </main>
 
-        <footer>
-            Thank you for visiting!
-        </footer>
     </div>
 
     {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
     {{/if}}
 </body>
+
+<footer>
+            Instruments R Us ™
+</footer>
 
 </html>
