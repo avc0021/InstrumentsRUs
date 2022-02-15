@@ -1,12 +1,14 @@
 
 const { Model, DataTypes } = require('sequelize');
+const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
 // create our User model
-class Instruments extends Model {}
+class Instrument extends Model {}
 
 // create fields/columns for User model
-Instruments.init(
+Instrument.init(
+
   {
     id: {
       type: DataTypes.INTEGER,
@@ -29,7 +31,7 @@ Instruments.init(
           isDecimal: true
         }
     },
-    filename: {
+    file_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -50,4 +52,4 @@ Instruments.init(
   }
 );
 
-module.exports = Instruments;
+module.exports = Instrument;

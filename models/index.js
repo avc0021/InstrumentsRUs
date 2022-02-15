@@ -3,10 +3,12 @@ const Instruments = require('./Instruments');
 
 // create associations
 User.hasMany(Instruments, {
-    foreignKey: 'user_id'
+    foreignKey: 'user_id',
+    constraints: false
   });
 
-Instruments.belongsTo(User, {
+Instruments.hasMany(User, {
+    constraints: false,
     foreignKey: 'instrument_id'
   }); 
 

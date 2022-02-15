@@ -1,20 +1,28 @@
+{{!-- post new instrument--}}
 <section>
     <h2>Create New Post</h2>
 
     <form class="new-post-form">
         <div>
-            <label for="post-title">Title</label>
-            <input type="text" id="post-title" name="post-title"/>
+            <label for="instrument-name">Instrument Name</label>
+            <input type="text" id="instrument-name" name="post-title"/>
         </div>
         <div>
-            <label for="post-url">Link</label>
-            <input id="post-url" name="post-url"/>
+            <label for="brand-name">Brand Name</label>
+            <input id="brand-name" name="brand-name"/>
         </div>
-        <button type="submit" class="btn">Create!</button>
+        <div>
+            <label for="price">Price</label>
+            <input id="price" name="price"/>
+        </div>
+        <div action="/action_page.php">
+            <input type="file" id="myFile" name="filename">
+            <input type="submit">
+        </div>
     </form>
 </section>
 
-{{#if posts.length}}
+{{!-- {{#if posts.length}}
 <section>
     <h2>Your Posts!</h2>
     <ol>
@@ -26,6 +34,7 @@
         {{/each}}
     </ol>
 </section>
-{{/if}}
+{{/if}} --}}
 
+<script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
 <script src="/javascript/add-post.js"></script>
