@@ -14,11 +14,10 @@
             <label for="price">Price</label>
             <input id="price" name="price"/>
         </div>
-        <div>
-            <label for="upload">Upload Image</label>
-            <input id="upload" name="upload"/>
+        <div action="/action_page.php">
+            <input type="file" id="myFile" name="filename">
+            <input type="submit">
         </div>
-        <button type="submit" class="btn">Create!</button>
     </form>
 </section>
 
@@ -36,4 +35,5 @@
 </section>
 {{/if}} --}}
 
+<script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
 <script src="/javascript/add-post.js"></script>

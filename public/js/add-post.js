@@ -1,6 +1,16 @@
 async function newFormHandler(event) {
     event.preventDefault();
   
+    const client = filestack.init(AXKRQb2VzQvmGCgSVGz2nz);
+    const options = {
+        fromSources: ["local_file_system","instagram","facebook"],
+        storeTo: {
+            location:'images',
+            path: '/public/css/images'
+        }
+      };
+    client.picker(options).open();
+    
     const title = document.querySelector('input[name="post-title"]').value;
     const post_url = document.querySelector('input[name="post-url"]').value;
   
