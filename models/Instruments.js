@@ -8,6 +8,7 @@ class Instrument extends Model {}
 
 // create fields/columns for User model
 Instrument.init(
+
   {
     id: {
       type: DataTypes.INTEGER,
@@ -29,6 +30,17 @@ Instrument.init(
         validate: {
           isDecimal: true
         }
+    },
+    filename: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id'
+      }
     }
   },
   {
