@@ -1,12 +1,14 @@
 
 const { Model, DataTypes } = require('sequelize');
+const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
 // create our User model
-class Instruments extends Model {}
+class Instrument extends Model {}
 
 // create fields/columns for User model
-Instruments.init(
+Instrument.init(
+
   {
     id: {
       type: DataTypes.INTEGER,
@@ -46,8 +48,8 @@ Instruments.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'instruments'
+    modelName: 'user'
   }
 );
 
-module.exports = Instruments;
+module.exports = Instrument;
