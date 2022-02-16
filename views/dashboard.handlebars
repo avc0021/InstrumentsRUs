@@ -15,9 +15,9 @@
             <label for="price">Price</label>
             <input id="price" name="price"/>
         </div>
-        <div action="/action_page.php">
-            <input type="file" id="myFile" name="filename">
-            <input type="submit">
+        <input type="filepicker" onchange="show();"/>
+        <div id="container">
+            <img id="uploadedImage" src="" />
         </div>
     </form>
 </section>

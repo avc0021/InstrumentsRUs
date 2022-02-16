@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruments R Us</title>
+    <!-- Linking in CSS (using Bootstrap) -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">Instruments R Us</div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/">Home</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Instruments</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/dashboard">Post</a>
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                {{#if loggedIn}}
+                                <li class="nav-item active"><a class="nav-link" id="logout" href="/">Log Out</a></li>
+                                {{else}}
+                                <li class="nav-item active"><a class="nav-link" href="/login">Login</a></li>
+                                {{/if}}
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Page Content -->
+                <main class="container-fluid mt-4">
+                    {{{body}}}
+                </main>
+
+                <footer class="container-fluid">
+                    Instruments R Us ™
+                </footer>
+            </div>
+        </div>
+    </div>
+    {{#if loggedIn}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+</body>
+
+</html>

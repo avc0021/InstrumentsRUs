@@ -1,15 +1,15 @@
 // For login
-async function loginFormHandler(event) {
+const loginFormHandler = async (event) => {
     event.preventDefault();
 
-    const email = document.querySelector('#email-login').value.trim();
+    const username = document.querySelector('#username-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
 
-    if (email && password) {
+    if (username && password) {
         const response = await fetch('/api/users/login', {
             method: 'post',
             body: JSON.stringify({
-                email,
+                username,
                 password
             }),
             headers: { 'Content-Type': 'application/json' }
@@ -18,22 +18,22 @@ async function loginFormHandler(event) {
         if (response.ok) {
             document.location.replace('/');
         } else {
-            alert(response.statusText);
+            alert('Failed to log in.');
         }
     }
-}
+};
 
 // For sign up
-async function signupFormHander(event) {
+const signupFormHander = async (event) => {
     event.preventDefault();
 
     const username = document.querySelector('#username-signup').value.trim();
     const email = document.querySelector('#email-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
 
-    if ( email && password) {
+    if (username && email && password) {
         const response = await fetch('/api/users', {
-            method: 'post',
+            method: 'POST',
             body: JSON.stringify({
                 username,
                 email,
@@ -45,10 +45,10 @@ async function signupFormHander(event) {
         if (response.ok) {
             document.location.replace('/');
         } else {
-            alert(response.statusText);
+            alert('Failed to sign up.');
         }
     }
-}
+};
 
 document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
 document.querySelector('.signup-form').addEventListener('submit', signupFormHander);
