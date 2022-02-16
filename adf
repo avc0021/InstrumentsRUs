@@ -1,0 +1,573 @@
+[33mcommit 1865ea80e92e0bc367256a5bb7f4ca0aec904d89[m[33m ([m[1;36mHEAD -> [m[1;32mwilson/run-seeds[m[33m)[m
+Merge: 02b2048 8e7fd8e
+Author: Sodaman <mattrick2214@gmail.com>
+Date:   Tue Feb 15 20:43:47 2022 -0600
+
+    Merge branch 'develop' of github.com:avc0021/InstrumentsRUs into wilson/run-seeds
+
+[33mcommit 8e7fd8e95f1d302a14dbcfa3d04c2812de6abf95[m
+Merge: 65689f1 34fd4aa
+Author: Matthew D Wilson <74633125+Mattrick127@users.noreply.github.com>
+Date:   Tue Feb 15 19:21:45 2022 -0600
+
+    Merge pull request #20 from avc0021/feature/avc0021
+    
+    Feature/avc0021
+
+[33mcommit 34fd4aa1f257a4bfd6114f7dbab407b5c340ef52[m
+Merge: 03cb4aa d40cc66
+Author: avc0021 <avc0021@gmail.com>
+Date:   Tue Feb 15 18:32:30 2022 -0600
+
+    for local merge
+
+[33mcommit d40cc665ea175c9fe759fd8a1a09aa5b058f5bce[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Tue Feb 15 18:30:53 2022 -0600
+
+    main hb update
+
+[33mcommit 02b2048c410a721a1983d0ff2f006c83fa7f8e27[m
+Merge: ad11f14 65689f1
+Author: Sodaman <mattrick2214@gmail.com>
+Date:   Tue Feb 15 17:36:50 2022 -0600
+
+    Merge branch 'develop' of github.com:avc0021/InstrumentsRUs into wilson/run-seeds
+
+[33mcommit 63f56d33cf27c232f9cc57324a8fb94b1269c814[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Tue Feb 15 17:25:43 2022 -0600
+
+    login working
+
+[33mcommit 03cb4aafeaa8fc311424f85227a320bbe590ee16[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Tue Feb 15 17:02:02 2022 -0600
+
+    hb update
+
+[33mcommit 65689f1bf178a1405a907ea9f4fc821181b47ee4[m
+Merge: 896f2fd 78dbde8
+Author: Matthew D Wilson <74633125+Mattrick127@users.noreply.github.com>
+Date:   Tue Feb 15 16:41:25 2022 -0600
+
+    Merge pull request #19 from avc0021/sariya/public
+    
+    Sariya/public
+
+[33mcommit 78dbde84351d817e3fc7e03872abe1d27a62f675[m
+Author: sariyarawaekklang <sariyarawaekklang@gmail.com>
+Date:   Tue Feb 15 15:14:32 2022 -0600
+
+    testing login
+
+[33mcommit 6c834efcb3ed3c730bc08a510c62e310b8ec3c9f[m
+Author: sariyarawaekklang <sariyarawaekklang@gmail.com>
+Date:   Tue Feb 15 14:57:05 2022 -0600
+
+    fixed sign up and logout
+
+[33mcommit ad11f1404be32ed76e16ee938563895ade1dbae7[m[33m ([m[1;31morigin/wilson/run-seeds[m[33m)[m
+Author: Sodaman <mattrick2214@gmail.com>
+Date:   Tue Feb 15 14:35:52 2022 -0600
+
+    attempting to get run seed to work
+
+[33mcommit ce47b5e8e868e410982c2a569c97d04ec3dd1ade[m
+Author: sariyarawaekklang <sariyarawaekklang@gmail.com>
+Date:   Tue Feb 15 14:24:08 2022 -0600
+
+    fixed js for login
+
+[33mcommit c2efd4aacddaddda446ed1270bc81f49e8e0b95f[m
+Merge: c5089ad 896f2fd
+Author: Sodaman <mattrick2214@gmail.com>
+Date:   Tue Feb 15 14:19:14 2022 -0600
+
+    Merge branch 'develop' of github.com:avc0021/InstrumentsRUs into develop
+
+[33mcommit 2613d97f738811c6c4722779049658cfee874ac0[m
+Author: sariyarawaekklang <sariyarawaekklang@gmail.com>
+Date:   Tue Feb 15 14:00:08 2022 -0600
+
+    edit login page
+
+[33mcommit e271055c10fc1a39e5d9fdcca9fb97dff5493c24[m
+Merge: 1f87c08 896f2fd
+Author: sariyarawaekklang <sariyarawaekklang@gmail.com>
+Date:   Tue Feb 15 13:27:32 2022 -0600
+
+    resolved conflicts from merge
+
+[33mcommit 896f2fd7b91a4027134a1017ec9ef4167ca0cc74[m
+Merge: 1879daa 97e2eff
+Author: sariyarawaekklang <92960373+sariyarawaekklang@users.noreply.github.com>
+Date:   Tue Feb 15 11:53:11 2022 -0600
+
+    Merge pull request #16 from avc0021/feature/avc0021
+    
+    Feature/avc0021
+
+[33mcommit 97e2eff6d79f200d6172b4feea29d0da81892744[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Tue Feb 15 01:09:59 2022 -0600
+
+    removed post instrument handlebars (dashboard will handle this instead)
+
+[33mcommit 78fcae0168014a7903800a818ad88d242d1805b2[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Tue Feb 15 01:05:56 2022 -0600
+
+    dashboard work in progress
+
+[33mcommit f1b6dbee78b4ab87bda44959de452cc0752ea910[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Tue Feb 15 00:34:03 2022 -0600
+
+    dashboard working
+
+[33mcommit 6546aea08edca5062a5d0ae90c191ede72cd9ff2[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Mon Feb 14 23:40:52 2022 -0600
+
+    login working!
+
+[33mcommit 4b0e73dc0975f045c33af00a59d475edcc88e8a0[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Mon Feb 14 21:25:14 2022 -0600
+
+    server up and running again
+
+[33mcommit 78fb1682c090d5783d4d39cefdfd7f9188350e23[m
+Merge: ba96704 1879daa
+Author: avc0021 <avc0021@gmail.com>
+Date:   Mon Feb 14 19:19:08 2022 -0600
+
+    Merge branch 'develop' of github.com:avc0021/InstrumentsRUs into develop
+
+[33mcommit ba96704c4b7adf2605121d601c1fb5167b16314f[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Mon Feb 14 19:19:02 2022 -0600
+
+    login js and login hb update
+
+[33mcommit 1879daafeadb39cab063684b619b90b7874436d0[m
+Merge: ed9dd3c 1da0224
+Author: avc0021 <91796423+avc0021@users.noreply.github.com>
+Date:   Mon Feb 14 19:16:13 2022 -0600
+
+    Merge pull request #15 from avc0021/lynnece/seeds
+    
+    user and instrument seeds
+
+[33mcommit 1da0224c2a2bd131dac80748af5ac4e5cd904f7a[m[33m ([m[1;31morigin/lynnece/seeds[m[33m)[m
+Merge: a345060 ed9dd3c
+Author: avc0021 <91796423+avc0021@users.noreply.github.com>
+Date:   Mon Feb 14 19:15:54 2022 -0600
+
+    Merge branch 'develop' into lynnece/seeds
+
+[33mcommit 1f87c0896cd4d5cc7e3dcb17aef832bada1b92bc[m
+Author: sariyarawaekklang <sariyarawaekklang@gmail.com>
+Date:   Sun Feb 13 21:03:42 2022 -0600
+
+    edit main page and login
+
+[33mcommit 771d2263fd21499fc40be18a805b8bbcaba0c036[m
+Author: sariyarawaekklang <sariyarawaekklang@gmail.com>
+Date:   Sun Feb 13 20:55:51 2022 -0600
+
+    finish login page:
+    ;
+    \q
+    clear
+    Q
+    clear
+    '
+
+[33mcommit a345060dadfa3bb13413cb51365fe62f66769130[m
+Author: bhari eutsey <bharilynn@outlook.com>
+Date:   Sun Feb 13 20:32:27 2022 -0600
+
+    user and instrument seeds
+
+[33mcommit 3ef15570a2fd49ad3d8b90ecbcb6ace3d97f2b6f[m
+Author: sariyarawaekklang <sariyarawaekklang@gmail.com>
+Date:   Sun Feb 13 20:28:02 2022 -0600
+
+    created log in page
+
+[33mcommit 6486a929307f159d14416d8908f494975030187e[m
+Author: sariyarawaekklang <sariyarawaekklang@gmail.com>
+Date:   Sun Feb 13 18:54:47 2022 -0600
+
+    css edits to main.handlebars
+
+[33mcommit 563f5d81f79929a6f2b5a7c4e539e581c4468be3[m
+Merge: 85f2985 ed9dd3c
+Author: sariyarawaekklang <sariyarawaekklang@gmail.com>
+Date:   Sun Feb 13 18:41:19 2022 -0600
+
+    edit main.handlebars, got css to work
+
+[33mcommit 85f2985cad26b1604aa409e2718c88f15c9a145e[m
+Author: sariyarawaekklang <sariyarawaekklang@gmail.com>
+Date:   Sun Feb 13 17:38:07 2022 -0600
+
+    changed bootstrap template
+
+[33mcommit 4b2c2b62030581d23f3b3c7416ced0d935de6583[m
+Merge: 8a14ecf ed9dd3c
+Author: avc0021 <avc0021@gmail.com>
+Date:   Sun Feb 13 14:18:08 2022 -0600
+
+    Merge branch 'develop' of github.com:avc0021/InstrumentsRUs into develop
+
+[33mcommit 8a14ecfb8e45e7ccc7850f0cf55a0710dba59ea7[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Sun Feb 13 14:16:54 2022 -0600
+
+    commit before merge
+
+[33mcommit c5089ad6b1aac6b4d9326b0ba9d40f6988c49b39[m[33m ([m[1;32mviews[m[33m)[m
+Merge: 69c4f5e ed9dd3c
+Author: Sodaman <mattrick2214@gmail.com>
+Date:   Sun Feb 13 14:11:40 2022 -0600
+
+    Merge branch 'develop' into views
+
+[33mcommit 69c4f5eea0661efdced305be189f96e2a3afc5d7[m[33m ([m[1;31morigin/views[m[33m)[m
+Merge: bd761c3 b32aaeb
+Author: Sodaman <mattrick2214@gmail.com>
+Date:   Sun Feb 13 13:43:57 2022 -0600
+
+    Merge branch 'views' of github.com:avc0021/InstrumentsRUs into views
+
+[33mcommit bd761c3e8172dcdd94ceb727f2c94f7eb14c4aa7[m
+Author: Sodaman <mattrick2214@gmail.com>
+Date:   Sun Feb 13 13:38:27 2022 -0600
+
+    partials handlebars for post in and comments
+
+[33mcommit ed9dd3ce9aee87a3f0fc1ab6878c2749fb25361e[m
+Merge: 13939be b32aaeb
+Author: avc0021 <91796423+avc0021@users.noreply.github.com>
+Date:   Sun Feb 13 13:37:14 2022 -0600
+
+    Merge pull request #14 from avc0021/views
+    
+    Views
+
+[33mcommit b32aaeb79e3705c90647d642a0e463464066f967[m
+Merge: cc74797 13939be
+Author: avc0021 <91796423+avc0021@users.noreply.github.com>
+Date:   Sun Feb 13 13:35:57 2022 -0600
+
+    Merge branch 'develop' into views
+
+[33mcommit 13939beb4550ffbda894d84aca63d26208b181c6[m
+Merge: 6b816f6 d751b4d
+Author: Matthew D Wilson <74633125+Mattrick127@users.noreply.github.com>
+Date:   Sun Feb 13 13:27:30 2022 -0600
+
+    Merge pull request #12 from avc0021/sariya/public
+    
+    Sariya/public
+
+[33mcommit cc747971afa5fc976f2c27e658bae4c7a69155a1[m
+Author: Sodaman <mattrick2214@gmail.com>
+Date:   Sun Feb 13 13:25:44 2022 -0600
+
+    fixed post_url tags
+
+[33mcommit d751b4d48ebb2f5408ce9b31acdec26b9394d52c[m
+Merge: b9b4d5d 6b816f6
+Author: sariyarawaekklang <sariyarawaekklang@gmail.com>
+Date:   Sun Feb 13 13:23:43 2022 -0600
+
+    css changes and navbar
+
+[33mcommit 54a4479ba07564c7737a129b3a50cf97c3cd425f[m
+Author: Sodaman <mattrick2214@gmail.com>
+Date:   Sun Feb 13 13:22:10 2022 -0600
+
+    dashboard.handlebars
+
+[33mcommit b9b4d5df8345b07b1d8d15d0a909578faee1efe8[m
+Author: sariyarawaekklang <sariyarawaekklang@gmail.com>
+Date:   Sun Feb 13 13:20:34 2022 -0600
+
+    edit handlebars
+
+[33mcommit 356a2d20e083e0e56a6da87ef0e22a8b7bf57e02[m
+Merge: e2f8015 9939255
+Author: Sodaman <mattrick2214@gmail.com>
+Date:   Sun Feb 13 13:19:07 2022 -0600
+
+    Merge branch 'main' of github.com:avc0021/InstrumentsRUs into views
+
+[33mcommit 6b816f6ad029db122e00b61159bdeb116b1b91ef[m
+Merge: 7dd6304 f27aea4
+Author: Matthew D Wilson <74633125+Mattrick127@users.noreply.github.com>
+Date:   Sun Feb 13 13:13:21 2022 -0600
+
+    Merge pull request #11 from avc0021/feature/avc0021
+    
+    Feature/avc0021
+
+[33mcommit f27aea463c8b9c10912e3f5c36d564fda01c0d36[m
+Merge: 0da7521 7dd6304
+Author: avc0021 <91796423+avc0021@users.noreply.github.com>
+Date:   Sun Feb 13 13:11:58 2022 -0600
+
+    Merge branch 'develop' into feature/avc0021
+
+[33mcommit e68063873d39d19d7f922b28bc5c63a42a93a93a[m
+Author: sariyarawaekklang <sariyarawaekklang@gmail.com>
+Date:   Sun Feb 13 13:08:17 2022 -0600
+
+    added css template from bootstrap
+
+[33mcommit 0da7521f81b00dd59d4c86c4faff81f82328f890[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Sun Feb 13 02:12:05 2022 -0600
+
+    login and create account working with tables but not rendering home page
+
+[33mcommit ec660d4a2df48fb6769bbd32a3b41c87e99afa8e[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Sun Feb 13 00:33:04 2022 -0600
+
+    unique id error resolved, addressing unknow field list issue next
+
+[33mcommit 673a6334980871e5c7bd5831f8cc39b9fda18b5a[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Sat Feb 12 22:22:10 2022 -0600
+
+    update instrument model to include user email, seeding in progress to render page
+
+[33mcommit 1bfc22ab127b2fbb8eb5bbd9ae29006b0f4a4987[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Sat Feb 12 12:38:52 2022 -0600
+
+    server running
+
+[33mcommit 6d2b7d9935b3fc6be350f13ad6071e6087966036[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Sat Feb 12 11:16:49 2022 -0600
+
+    question
+
+[33mcommit 7dd6304ed5f2dfbbf4f5f43068f21bba38b75b55[m
+Merge: 9d5b6ef 9939255
+Author: LynneceEutsey <79560122+LynneceE@users.noreply.github.com>
+Date:   Sat Feb 12 10:28:42 2022 -0600
+
+    Merge pull request #10 from avc0021/main
+    
+    from main to develop
+
+[33mcommit 4e4aed5c53b158a2009aed52a432e73c208194f1[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Sat Feb 12 10:23:46 2022 -0600
+
+    update in handlebars and install 2 other package
+
+[33mcommit 9f83425926dc8354c34135b2ab0ac0e924620733[m
+Merge: 3394b43 9d5b6ef
+Author: avc0021 <avc0021@gmail.com>
+Date:   Fri Feb 11 21:10:02 2022 -0600
+
+    Merge branch 'develop' into feature/avc0021
+
+[33mcommit 3394b433e58690b69cd5ac26b04dfdc9ddf54e78[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Fri Feb 11 21:06:59 2022 -0600
+
+    update model instru
+
+[33mcommit 9d5b6efe0b2e3cda221aef1fdc951ddb0c442398[m
+Merge: 01d3425 62ae8a0
+Author: sariyarawaekklang <92960373+sariyarawaekklang@users.noreply.github.com>
+Date:   Fri Feb 11 21:02:00 2022 -0600
+
+    Merge pull request #8 from avc0021/feature/avc0021
+    
+    Feature/avc0021
+
+[33mcommit 62ae8a09fdee846bbfee6b80281356a6006936d0[m
+Merge: 8272b9e 01d3425
+Author: avc0021 <91796423+avc0021@users.noreply.github.com>
+Date:   Fri Feb 11 20:58:13 2022 -0600
+
+    Merge branch 'develop' into feature/avc0021
+
+[33mcommit e2f8015b5decdbd2a051c381b5887695451bd216[m
+Author: Sodaman <mattrick2214@gmail.com>
+Date:   Fri Feb 11 00:25:11 2022 -0600
+
+    handlebar update
+
+[33mcommit 01d3425c6b1801f6930257ae76bfd9f90aeeb9d1[m
+Merge: 59fef3a a388c71
+Author: Matthew D Wilson <74633125+Mattrick127@users.noreply.github.com>
+Date:   Fri Feb 11 00:23:46 2022 -0600
+
+    Merge pull request #7 from avc0021/lynnece/user-home
+    
+    server connection, user model w/ route, home-route, dashboard-route f…
+
+[33mcommit 8272b9e44cc41478d95090e2bf1c7f5a0f4547ee[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Thu Feb 10 22:37:58 2022 -0600
+
+    updated syntax for db-db generates
+
+[33mcommit a1c454e08ef0f56a1f3ff32bb02eaa880f57d8ad[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Thu Feb 10 22:25:20 2022 -0600
+
+    index and instru models updated
+
+[33mcommit a388c711c9b9cd77dc9b358c459f53d8898edab5[m[33m ([m[1;31morigin/lynnece/user-home[m[33m)[m
+Merge: b9ca8cf 59fef3a
+Author: avc0021 <91796423+avc0021@users.noreply.github.com>
+Date:   Thu Feb 10 22:03:41 2022 -0600
+
+    Merge branch 'develop' into lynnece/user-home
+
+[33mcommit b9ca8cf018b80eaeb7e1da2c13a640441ae43e56[m
+Author: bhari eutsey <bharilynn@outlook.com>
+Date:   Thu Feb 10 21:29:22 2022 -0600
+
+    server connection, user model w/ route, home-route, dashboard-route file created
+
+[33mcommit 59fef3a65a1a1205665bbdcbe02246afdfbb9b93[m
+Merge: 13d2f87 be88249
+Author: avc0021 <91796423+avc0021@users.noreply.github.com>
+Date:   Thu Feb 10 21:00:47 2022 -0600
+
+    Merge pull request #6 from avc0021/sariya/public
+    
+    Sariya/public
+
+[33mcommit 9939255e1f1536d889d85cd669efc6fad6d7459f[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: d4da5d9 5788ab1
+Author: avc0021 <91796423+avc0021@users.noreply.github.com>
+Date:   Thu Feb 10 20:59:57 2022 -0600
+
+    Merge pull request #5 from avc0021/views
+    
+    Views
+
+[33mcommit be882493be03240f9ed344d27f7f604a0d3c8654[m
+Author: sariyarawaekklang <sariyarawaekklang@gmail.com>
+Date:   Thu Feb 10 20:55:15 2022 -0600
+
+    created logout.js
+
+[33mcommit 62ee2057f0e6fe3843a4e871132ef482b6fb6483[m
+Author: sariyarawaekklang <sariyarawaekklang@gmail.com>
+Date:   Thu Feb 10 20:52:44 2022 -0600
+
+    created login.js
+
+[33mcommit 5788ab1188aaf171a1221ca3ef7862258d25a3b8[m
+Author: Sodaman <mattrick2214@gmail.com>
+Date:   Thu Feb 10 20:12:34 2022 -0600
+
+    Rewrote login.handlebars
+
+[33mcommit 1e065e96cdf8864e91d4aaba2a09bab06bdf82e7[m
+Author: Sodaman <mattrick2214@gmail.com>
+Date:   Thu Feb 10 19:53:07 2022 -0600
+
+    moved files around, added to homepage.handlebars
+
+[33mcommit 2fb5ca98a9f48aec62101570250f401686a0e161[m
+Author: avc0021 <avc0021@gmail.com>
+Date:   Wed Feb 9 21:58:10 2022 -0600
+
+    models started
+
+[33mcommit b87e2aae6a9a50869ac726babaf366804d151685[m
+Author: Sodaman <mattrick2214@gmail.com>
+Date:   Tue Feb 8 21:07:31 2022 -0600
+
+    main and login.handlebars template
+
+[33mcommit 13d2f87c8a7eaf5b173d574cedd54b8760357884[m
+Merge: 5022475 bf665ca
+Author: LynneceEutsey <79560122+LynneceE@users.noreply.github.com>
+Date:   Tue Feb 8 20:17:22 2022 -0600
+
+    Merge pull request #4 from avc0021/views
+    
+    Views
+
+[33mcommit 50224759d0ebac25829e3dc16cab00c2eefe7eb4[m
+Merge: c30ee0a a0c03be
+Author: Matthew D Wilson <74633125+Mattrick127@users.noreply.github.com>
+Date:   Tue Feb 8 20:16:43 2022 -0600
+
+    Merge pull request #3 from avc0021/lynnece/folder-struct
+    
+    Lynnece/folder struct
+
+[33mcommit a0c03be9b683f012fbfc1c5b932b15abdf1a90f1[m[33m ([m[1;31morigin/lynnece/folder-struct[m[33m)[m
+Author: bhari eutsey <bharilynn@outlook.com>
+Date:   Tue Feb 8 20:11:58 2022 -0600
+
+    new file
+
+[33mcommit bf665ca4ad0018f34cda1e0c5729d2a3f8cf4945[m
+Author: Sodaman <mattrick2214@gmail.com>
+Date:   Tue Feb 8 20:09:49 2022 -0600
+
+    homepage.handlebars
+
+[33mcommit 69feee2efbdcdbedb8ba197b586bfe512e340be6[m
+Merge: 16451c6 c30ee0a
+Author: bhari eutsey <bharilynn@outlook.com>
+Date:   Tue Feb 8 19:59:01 2022 -0600
+
+    Merge branch 'develop' of github.com:avc0021/InstrumentsRUs into develop
+
+[33mcommit b8eefa13bd664dbeb24015c839c83238416c4e4a[m
+Author: Sodaman <mattrick2214@gmail.com>
+Date:   Tue Feb 8 19:58:35 2022 -0600
+
+    Started writing in standard main.handlebars
+
+[33mcommit 16451c6bd9e45606d953487853bd090d922a0140[m
+Author: bhari eutsey <bharilynn@outlook.com>
+Date:   Tue Feb 8 19:57:58 2022 -0600
+
+    basic file structure
+
+[33mcommit c30ee0ad7d8fbf63ce5f3b6b1bca3f8cf6f7957d[m
+Merge: d4da5d9 4f91bf1
+Author: sariyarawaekklang <92960373+sariyarawaekklang@users.noreply.github.com>
+Date:   Tue Feb 8 19:53:10 2022 -0600
+
+    Merge pull request #1 from avc0021/sariya/public
+    
+    created public folder
+
+[33mcommit 4f91bf166a8d698fe87cdc0d901e38d432c30fce[m
+Author: sariyarawaekklang <sariyarawaekklang@gmail.com>
+Date:   Tue Feb 8 19:50:40 2022 -0600
+
+    created public folder
+
+[33mcommit d4da5d9a85b9e2602f37b65a604b5ab82da3ffde[m[33m ([m[1;31morigin/lynnece/routes[m[33m, [m[1;32mmain[m[33m)[m
+Author: avc0021 <91796423+avc0021@users.noreply.github.com>
+Date:   Sun Feb 6 21:24:13 2022 -0600
+
+    Update .gitignore
+
+[33mcommit 65b4f865cb23b26cf4c32fcc1c0b48651d4a61ad[m
+Author: avc0021 <91796423+avc0021@users.noreply.github.com>
+Date:   Sun Feb 6 21:22:36 2022 -0600
+
+    Initial commit
