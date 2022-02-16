@@ -11,14 +11,18 @@ async function newFormHandler(event) {
       };
     client.picker(options).open();
     
-    //const title = document.querySelector('input[name="post-title"]').value;
-    //const post_url ="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbanjo.com%2Fproduct%2Fdeering-julia-belle-5-string-banjo%2F&psig=AOvVaw0wmRhUOlVIFDv9zp98RPa7&ust=1645063406895000&source=images&cd=vfe&ved=0CAcQjRxqFwoTCOi3_vGQg_YCFQAAAAAdAAAAABAF"
-  
+    const instrument = document.querySelector('input[name="instrument"]').value;
+    const brand_name= document.querySelector('textarea[name="brand-name"]').value;
+    const price = document.querySelector('textarea[name="price"]').value;
+    const url = document.querySelector('input[name="url"]').value;
+
     const response = await fetch(`/api/posts`, {
       method: 'POST',
       body: JSON.stringify({
-        // title,
-         //post_url
+        instrument,
+        brand_name,
+        price,
+        url,
       }),
       headers: {
         'Content-Type': 'application/json'
