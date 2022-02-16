@@ -1,15 +1,15 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { User, Instruments } = require('../models');
+const { User, Post } = require('../models');
 
 router.get('/', (req, res) => {
-  Instruments.findAll({
+    Post.findAll({
     attributes: [
       'id',
       'instrument',
       'brand_name',
       'price',
-      'filename',
+      'url',
     ],
     //   include: [
     //     {
@@ -30,6 +30,7 @@ router.get('/', (req, res) => {
     console.log(err);
     res.status(500).json(err);
   });
+
 });
 
 // route to login.handlebars page
