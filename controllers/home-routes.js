@@ -1,22 +1,25 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { User, Instruments } = require('../models');
+const { User, Post } = require('../models');
 
 router.get('/', (req, res) => {
-  Instruments.findAll({
+    Post.findAll({
+      where: {
+        user_id: req.session.user_id
+    },
     attributes: [
       'id',
       'instrument',
       'brand_name',
       'price',
-      'filename',
+      'url',
     ],
-    //   include: [
-    //     {
-    //       model: User,
-    //       attributes:['id','username','email', 'password']
-    //     }
-    // ]
+       include: [
+         {
+           model: User,
+           attributes:['id','email']
+         }
+     ]
   })
   .then(dbPostData => {
     const posts = dbPostData.map(post => post.get({ plain: true }));
@@ -30,6 +33,7 @@ router.get('/', (req, res) => {
     console.log(err);
     res.status(500).json(err);
   });
+
 });
 
 // route to login.handlebars page

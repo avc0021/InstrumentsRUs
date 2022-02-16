@@ -1,24 +1,28 @@
 async function newFormHandler(event) {
     event.preventDefault();
   
-    // const client = filestack.init(AXKRQb2VzQvmGCgSVGz2nz);
-    // const options = {
-    //     fromSources: ["local_file_system","instagram","facebook"],
-    //     storeTo: {
-    //         location:'images',
-    //         path: '/public/css/images'
-    //     }
-    //   };
-    // client.picker(options).open();
+    const client = filestack.init(AXKRQb2VzQvmGCgSVGz2nz);
+    const options = {
+        fromSources: ["local_file_system","instagram","facebook"],
+        storeTo: {
+            location:'images',
+            path: '/public/css/images'
+        }
+      };
+    client.picker(options).open();
     
-    //const title = document.querySelector('input[name="post-title"]').value;
-    //const post_url = document.querySelector('input[name="post-url"]').value;
-  
+    const instrument = document.querySelector('input[name="instrument"]').value;
+    const brand_name= document.querySelector('textarea[name="brand-name"]').value;
+    const price = document.querySelector('textarea[name="price"]').value;
+    const url = document.querySelector('input[name="url"]').value;
+
     const response = await fetch(`/api/posts`, {
       method: 'POST',
       body: JSON.stringify({
-        title,
-        post_url
+        instrument,
+        brand_name,
+        price,
+        url,
       }),
       headers: {
         'Content-Type': 'application/json'
@@ -32,4 +36,4 @@ async function newFormHandler(event) {
     }
   }
   
-  document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);
+  document.getElementById('submit').addEventListener('submit', newFormHandler);

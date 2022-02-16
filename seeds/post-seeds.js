@@ -1,19 +1,19 @@
-const { Instruments } = require('../models');
+const { Post } = require('../models');
 
 const instrumentDetails = [
   {
     instrument: 'Tenor Saxophone',
     brand_name: 'Yamaha Custom Z',
     price: 5100,
-    filename: 'tenorsax.png',
+    url: 'https://shop.brianmayguitars.co.uk/user/products/large/BMG%20Arielle%202021%2001.jpg',
     user_id: 1
   },
   {
     instrument: 'Banjo',
     brand_name: 'Epiphone MB-100 First Pick Banjo',
     price: 250,
-    filename: 'banjo.png',
-    user_id: 1
+    url: 'https://shop.brianmayguitars.co.uk/user/products/large/BMG%20Arielle%202021%2001.jpg',
+    user_id: 2
   },
 ];
 
