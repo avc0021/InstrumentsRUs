@@ -1,10 +1,10 @@
 // For login
-const loginFormHandler = async (event) => {
+async function loginFormHandler(event) {
     event.preventDefault();
-
+  
     const username = document.querySelector('#username-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
-
+  
     if (username && password) {
         const response = await fetch('/api/users/login', {
             method: 'post',
@@ -17,25 +17,26 @@ const loginFormHandler = async (event) => {
 
         if (response.ok) {
             document.location.replace('/');
-        } else {
-            alert('Failed to log in.');
+        } 
+        else {
+            alert(response.statusText);
         }
     }
-};
+  };
 
 // For sign up
-const signupFormHander = async (event) => {
+async function signupFormHandler(event) {
     event.preventDefault();
-
-    //const username = document.querySelector('#username-signup').value.trim();
+  
+    const username = document.querySelector('#username-signup').value.trim();
     const email = document.querySelector('#email-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
-
+  
     if (username && email && password) {
         const response = await fetch('/api/users', {
-            method: 'POST',
+            method: 'post',
             body: JSON.stringify({
-                //username,
+                username,
                 email,
                 password
             }),
@@ -43,12 +44,14 @@ const signupFormHander = async (event) => {
         });
 
         if (response.ok) {
-            document.location.replace('/');
-        } else {
-            alert('Failed to sign up.');
+            document.location.replace('/dashboard');
+        } 
+        else {
+            alert(response.statusText);
         }
     }
-};
-
+}
+  
 document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
-document.querySelector('.signup-form').addEventListener('submit', signupFormHander);
+  
+document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);

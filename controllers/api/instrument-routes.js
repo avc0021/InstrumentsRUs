@@ -1,4 +1,4 @@
-// Instruments.findAll({
+// Post.findAll({
 //     attributes: [
 //       'id',
 //       'instrument',
