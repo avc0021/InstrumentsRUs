@@ -19,10 +19,10 @@
        event.preventDefault();
      
       const title = document.querySelector('input[name="title"]').value;
-      const description= document.querySelector('textarea[name="description"]').value;
+      const description= document.querySelector('input[name="description"]').value;
       const image_url = "https://cdn.filestackcontent.com/" + imageHandle;
      
-       const response = await fetch(`/api/recipes`, {
+       const response = await fetch(`/api/posts`, {
          method: "POST",
       body: JSON.stringify({
         title,
@@ -40,10 +40,10 @@
          alert(response.statusText);
        }
      }
+     console.log('newFormHandler')
      
      
-    document.querySelector(".new-post-form")
-    document.addEventListener("submit", newFormHandler);
+    document.querySelector(".new-post-form").addEventListener("submit", newFormHandler);
 
 
 

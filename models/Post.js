@@ -18,12 +18,12 @@ Post.init(
           allowNull: false,
         },
         description: {
-          type: DataTypes.STRING(2000),
+          type: DataTypes.STRING,
           allowNull: false,
         },
         image_url: {
           type: DataTypes.STRING,
-          allowNull: false,
+          allowNull: true,
         },
         user_id: {
           type: DataTypes.INTEGER,
@@ -36,7 +36,7 @@ Post.init(
     {
       sequelize,
       freezeTableName: true,
-      underscored: true,
+      //underscored: true,
       modelName: 'post'
     }
 );
