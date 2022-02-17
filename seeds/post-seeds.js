@@ -17,6 +17,6 @@ const instrumentDetails = [
   },
 ];
 
-const seedInstruments = () => Instruments.bulkCreate(instrumentDetails);
+const seedInstruments = () => Post.bulkCreate(instrumentDetails);
 
 module.exports = seedInstruments;
