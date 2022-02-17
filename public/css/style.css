@@ -96,6 +96,9 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+header {
+  float: right;
+}
 footer {
   position: fixed;
   left: 0;
@@ -4793,31 +4796,36 @@ fieldset:disabled .btn {
   color: #fff;
 }
 
-.card{
+.card {
   width: 25rem;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-.card img{
+.card-body {
+  width: 250px;
+  height: 200px;
+  border: 1px solid black;
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+}
+
+.card img {
   justify-content: center;
 }
 
-.card-text{
+.card-text {
   margin-left: 10px;
   margin-right: 10px;
   background-color: rgba(247, 239, 239, 0.1);
 }
 
-.card-header{
+.card-header {
   background-color: var(--primary-bg);
   color: var(--prime-text-color);
   text-align: center;
-}
-
-.card-header-link{
-  color: var(--prime-text-color);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .accordion-button {

@@ -9,7 +9,7 @@ const instrumentDetails = [
   },
   {
     title: 'Banjo for Sale',
-    description: 'Epiphone MB-100 First Pick Banjo- New. Contacted (000)000-000 for more info',
+    description: 'Epiphone MB-100 First Pick Banjo- New. Contact (000)000-000 for more info',
     image_url: 'https://static.turbosquid.com/Preview/2018/10/27__17_42_14/VintageBanjo3dsmodel000.jpg23109F93-ED2F-4EA2-90A0-DD15DCB8238FDefaultHQ.jpg',
     user_id: 2
   },
