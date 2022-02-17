@@ -1,11 +1,11 @@
-    //Instantiating dialog with Filestack
-     const client = filestack.init("AXKRQb2VzQvmGCgSVGz2nz");
-     var imageHandle = "";
+    //Starting dialog with Filestack
+     const client = filestack.init('AXKRQb2VzQvmGCgSVGz2nz');
+     var imageHandle = '';
 
      function openPhotoPicker() {
        client
          .pick({
-           accept: "image/*",
+           accept: 'image/*',
            maxFiles: 1,
          })
          .then(function (result) {
@@ -24,10 +24,10 @@
      
        const response = await fetch(`/api/posts`, {
          method: "POST",
-      body: JSON.stringify({
-        title,
-        description,
-        image_url,
+          body: JSON.stringify({
+          title,
+          description,
+          image_url,
       }),
          headers: {
            "Content-Type": "application/json",

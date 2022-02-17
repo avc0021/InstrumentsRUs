@@ -18,8 +18,8 @@ router.get('/', withAuth, (req, res) => {
       ],
   })
   .then(dbPostData => {
-      const posts = dbPostData.map(post => post.get({ plain: true }));
-      res.render('dashboard', { posts, loggedIn: true, user_edit: true });
+      const posts = dbPostData.map((post) => post.get({ plain: true }));
+      res.render('dashboard', { posts, loggedIn: true });
   })
   .catch(err => {
       console.log(err);
@@ -27,4 +27,19 @@ router.get('/', withAuth, (req, res) => {
   });
 });
 
+router.post('/', withAuth, (req, res) => {
+    if (req.session) {
+        Post.create({
+            title: req.body.title,
+            description: req.body.description,
+            user_id: req.session.user_id,
+            image_url: req.body.url,
+        })
+        .then(dbPostData => res.json(dbPostData))
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+    }
+});
 module.exports = router;
