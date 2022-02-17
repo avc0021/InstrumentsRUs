@@ -1,15 +1,19 @@
+    //Instantiating dialog with Filestack
+    const client = filestack.init(AXKRQb2VzQvmGCgSVGz2nz);
+    // const options = {
+    //     fromSources: ["local_file_system","instagram","facebook"],
+    //     storeTo: {
+    //         location:'images',
+    //         path: '/public/css/images'
+    //     }
+    //   };
+    //client.picker({});
+    function pickMark() {
+      console.log("Picking Watermark")
+    };
+
 async function newFormHandler(event) {
     event.preventDefault();
-  
-    const client = filestack.init(AXKRQb2VzQvmGCgSVGz2nz);
-    const options = {
-        fromSources: ["local_file_system","instagram","facebook"],
-        storeTo: {
-            location:'images',
-            path: '/public/css/images'
-        }
-      };
-    client.picker(options).open();
     
     const instrument = document.querySelector('input[name="instrument"]').value;
     const brand_name= document.querySelector('textarea[name="brand-name"]').value;
@@ -36,4 +40,4 @@ async function newFormHandler(event) {
     }
   }
   
-  document.getElementById('submit').addEventListener('submit', newFormHandler);
+  document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);

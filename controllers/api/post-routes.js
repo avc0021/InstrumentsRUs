@@ -3,10 +3,10 @@ const { Post } = require('../../models');
 const sequelize = require('../../config/connection');
 const withAuth = require('../../utils/auth');
 
-
+//creates new post for a user that is logged in
 router.post('/', withAuth, (req, res) => {
     if (req.session) {
-        Post.create({ // creates new POST for user loggedin
+        Post.create({
             instrument: req.body.instrument,
             brand_name: req.body.brand_name,
             price: req.body.price,
