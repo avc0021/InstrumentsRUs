@@ -1,22 +1,22 @@
 {{!-- post new instrument--}}
-<section>
+<section class="create-section">
     <h2>Create New Post</h2>
 
     <form class="new-post-form">
-        <div>
+        <div class="title">
             <label for="title">Title</label>
             <input type="text" id="title" name="title"/>
         </div>
         
-        <div>
+        <div class="description">
             <label for="description">Description</label>
             <input id="description" name="description"/>
         </div>
 
-		<div>
+		<div class="btn">
 			<input type="BUTTON" name="Pick photo" value="Pick photo" id="photoPicker" class="btn btn-primary btn-sm btn-block" onclick="openPhotoPicker()">
 		</div>
-		<div class="">
+		<div class="btn">
 		    <button type="submit" class="btn btn-primary btn-sm btn-block">Post</button>
 		</div>
     </form>
