@@ -18,17 +18,15 @@
      async function newFormHandler(event) {
        event.preventDefault();
      
-      const instrument = document.querySelector('input[name="instrument"]').value;
-      const brand_name= document.querySelector('textarea[name="brand-name"]').value;
-      const price = document.querySelector('textarea[name="price"]').value;
+      const title = document.querySelector('input[name="title"]').value;
+      const description= document.querySelector('textarea[name="description"]').value;
       const image_url = "https://cdn.filestackcontent.com/" + imageHandle;
      
        const response = await fetch(`/api/recipes`, {
          method: "POST",
       body: JSON.stringify({
-        instrument,
-        brand_name,
-        price,
+        title,
+        description,
         image_url,
       }),
          headers: {
