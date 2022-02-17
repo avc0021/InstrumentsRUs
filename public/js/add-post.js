@@ -1,17 +1,27 @@
     //Instantiating dialog with Filestack
-    const client = filestack.init(AXKRQb2VzQvmGCgSVGz2nz);
-    // const options = {
-    //     fromSources: ["local_file_system","instagram","facebook"],
-    //     storeTo: {
-    //         location:'images',
-    //         path: '/public/css/images'
-    //     }
-    //   };
-    //client.picker({});
-    function pickMark() {
-      console.log("Picking Watermark")
-    };
+//     const client = filestack.init("AXKRQb2VzQvmGCgSVGz2nz");
 
+//       var imageHandle = ''
+//       client.picker({});
+    
+//     function pickMark() {
+//       console.log("Picking Watermark")
+//     };
+
+//     function openPhotoPicker() {
+//       console.log("blah blah blah");
+//       console.log("open Photo Picker");
+//           client.pick({
+//             accept: 'image/*',
+//           maxFiles: 1,
+//           }).then(function(result) {
+//             console.log(JSON.stringify(result));
+//             imageHandle = result.filesUploaded[0].handle;
+//             console.log(imageHandle);
+//           })
+
+//     }
+// openPhotoPicker();
 async function newFormHandler(event) {
     event.preventDefault();
     
