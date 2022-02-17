@@ -4,9 +4,6 @@ const { User, Post } = require('../models');
 
 router.get('/', (req, res) => {
     Post.findAll({
-      where: {
-        user_id: req.session.user_id
-    },
     attributes: [
       'id',
       'instrument',
@@ -36,13 +33,13 @@ router.get('/', (req, res) => {
 
 });
 
-// route to login.handlebars page
+//route to login.handlebars page
 router.get('/login', (req, res) => {
     if (req.session.loggedin) {
-      res.redirect('/');
+      res.redirect('homepage');
       return;
     }
     res.render('login');
   });
 
-  module.exports = router;
+   module.exports = router;
