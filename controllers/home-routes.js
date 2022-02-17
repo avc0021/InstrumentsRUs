@@ -6,10 +6,9 @@ router.get('/', (req, res) => {
     Post.findAll({
     attributes: [
       'id',
-      'instrument',
-      'brand_name',
-      'price',
-      'url',
+      'title',
+      'description',
+      'image_url',
     ],
        include: [
          {

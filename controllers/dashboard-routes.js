@@ -5,24 +5,17 @@ const withAuth = require('../utils/auth');
 
 // get all posts for dashboard
 router.get('/', withAuth, (req, res) => {
-    console.log('hello this i sthe route we are htting ')
+    //console.log('hello this is the route we are hitting ')
   Post.findAll({
       where: {
           user_id: req.session.user_id
       },
       attributes: [
-          'id',
-          'instrument',
-          'brand_name',
-          'price',
-          'url',
+        'id',
+        'title',
+        'description',
+        'image_url',
       ],
-      include: [
-          {
-              model: User,
-              attributes: ['username']
-          }
-      ]
   })
   .then(dbPostData => {
       const posts = dbPostData.map(post => post.get({ plain: true }));

@@ -1,17 +1,16 @@
-<div class="col-12 d-flex justify-content-center">
+<div class="card-columns">
     <div class="card">
         <div class="card-header">
-            <a href="/post/{{id}}" class="card-header-link">{{brand_name}}</a>
+            <p class="card-header-brand">{{title}}</p>
         </div>
         <div class="card-body">
-            <div class="d-flex justify-content-center"></div>
-                <img src="{{image_url}}"  width="360px" height="300px" alt="">
+            <div class=""></div>
+                <a href="/posts/{{id}}"></a>
+                    <img src="{{image_url}}"  width="300px" height="200px" alt=""/>
+                </a>    
             </div>
-            <p class="card-text">{{instrument}}</p>
-            <div class="d-flex justify-content-center">
-            </div>
-            <div class="d-flex justify-content-between">
-                <div id="post-by">Posted by {{user.username}} who can be contacted at {{email}}</div>
+            <div class="description">
+                <div id="description">Description: {{description}}</div>
             </div>
         </div>
     </div>

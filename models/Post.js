@@ -4,7 +4,7 @@ const sequelize = require('../config/connection');
 
 class Post extends Model {}
 
-// post model includes {Title, Image URL, Post body, User Id reference}
+// post model 
 Post.init(
     {
         id: {
@@ -13,24 +13,17 @@ Post.init(
           primaryKey: true,
           autoIncrement: true
         },
-        instrument: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        brand_name: {
-          type: DataTypes.STRING,
-          allowNull: false
-        },
-        price: {
-            type: DataTypes.DECIMAL,
-            allowNull: false,
-            validate: {
-              isDecimal: true
-            }
-        },
-        url: {
+        title: {
           type: DataTypes.STRING,
           allowNull: false,
+        },
+        description: {
+          type: DataTypes.STRING,
+          allowNull: false,
+        },
+        image_url: {
+          type: DataTypes.STRING,
+          allowNull: true,
         },
         user_id: {
           type: DataTypes.INTEGER,
@@ -43,7 +36,7 @@ Post.init(
     {
       sequelize,
       freezeTableName: true,
-      underscored: true,
+      //underscored: true,
       modelName: 'post'
     }
 );
