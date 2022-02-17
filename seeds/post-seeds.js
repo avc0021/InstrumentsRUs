@@ -1,4 +1,4 @@
-const { Post } = require('../models');
+const { Instruments } = require('../models');
 
 const instrumentDetails = [
   {
