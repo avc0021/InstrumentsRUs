@@ -22,7 +22,7 @@
       const description= document.querySelector('input[name="description"]').value;
       const image_url = "https://cdn.filestackcontent.com/" + imageHandle;
      
-       const response = await fetch(`/api/posts`, {
+       const response = await fetch('/api/posts', {
          method: "POST",
           body: JSON.stringify({
           title,
