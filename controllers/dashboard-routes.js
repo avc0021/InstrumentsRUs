@@ -1,12 +1,12 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Post, User } = require('../models');
+const { Post, User, Instruments } = require('../models');
 const withAuth = require('../utils/auth');
 
 // get all posts for dashboard
 router.get('/', withAuth, (req, res) => {
     console.log('hello this i sthe route we are htting ')
-  Post.findAll({
+  Instruments.findAll({
       where: {
           user_id: req.session.user_id
       },
