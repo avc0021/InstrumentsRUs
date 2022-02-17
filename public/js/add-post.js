@@ -1,5 +1,55 @@
     //Instantiating dialog with Filestack
-//     const client = filestack.init("AXKRQb2VzQvmGCgSVGz2nz");
+     const client = filestack.init("AXKRQb2VzQvmGCgSVGz2nz");
+     var imageHandle = "";
+
+     function openPhotoPicker() {
+       client
+         .pick({
+           accept: "image/*",
+           maxFiles: 1,
+         })
+         .then(function (result) {
+           console.log(JSON.stringify(result));
+           imageHandle = result.filesUploaded[0].handle;
+           console.log(imageHandle);
+         });
+     }
+     
+     async function newFormHandler(event) {
+       event.preventDefault();
+     
+      const instrument = document.querySelector('input[name="instrument"]').value;
+      const brand_name= document.querySelector('textarea[name="brand-name"]').value;
+      const price = document.querySelector('textarea[name="price"]').value;
+      const image_url = "https://cdn.filestackcontent.com/" + imageHandle;
+     
+       const response = await fetch(`/api/recipes`, {
+         method: "POST",
+      body: JSON.stringify({
+        instrument,
+        brand_name,
+        price,
+        image_url,
+      }),
+         headers: {
+           "Content-Type": "application/json",
+         },
+       });
+     
+       if (response.ok) {
+         document.location.reload();
+       } else {
+         alert(response.statusText);
+       }
+     }
+     
+     
+    document.querySelector(".new-post-form")
+    document.addEventListener("submit", newFormHandler);
+
+
+
+
 
 //       var imageHandle = ''
 //       client.picker({});
@@ -22,32 +72,32 @@
 
 //     }
 // openPhotoPicker();
-async function newFormHandler(event) {
-    event.preventDefault();
+// async function newFormHandler(event) {
+//     event.preventDefault();
     
-    const instrument = document.querySelector('input[name="instrument"]').value;
-    const brand_name= document.querySelector('textarea[name="brand-name"]').value;
-    const price = document.querySelector('textarea[name="price"]').value;
-    const url = document.querySelector('input[name="url"]').value;
+//     const instrument = document.querySelector('input[name="instrument"]').value;
+//     const brand_name= document.querySelector('textarea[name="brand-name"]').value;
+//     const price = document.querySelector('textarea[name="price"]').value;
+//     const url = document.querySelector('input[name="url"]').value;
 
-    const response = await fetch(`/api/posts`, {
-      method: 'POST',
-      body: JSON.stringify({
-        instrument,
-        brand_name,
-        price,
-        url,
-      }),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
+//     const response = await fetch(`/api/posts`, {
+//       method: 'POST',
+//       body: JSON.stringify({
+//         instrument,
+//         brand_name,
+//         price,
+//         url,
+//       }),
+//       headers: {
+//         'Content-Type': 'application/json'
+//       }
+//     });
   
-    if (response.ok) {
-      document.location.replace('/dashboard');
-    } else {
-      alert(response.statusText);
-    }
-  }
+//     if (response.ok) {
+//       document.location.replace('/dashboard');
+//     } else {
+//       alert(response.statusText);
+//     }
+//   }
   
-  document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);
+//   document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);

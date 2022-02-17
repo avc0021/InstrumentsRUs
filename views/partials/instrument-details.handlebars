@@ -1,17 +1,17 @@
-<div class="col-12 d-flex justify-content-center">
+<div class="col-20 d-flex center-fixed">
     <div class="card">
         <div class="card-header">
-            <a href="/post/{{id}}" class="card-header-link">{{brand_name}}</a>
+            <a href="/post/{{id}}" class="card-header-brand">{{instrument}}</a>
         </div>
         <div class="card-body">
             <div class="d-flex justify-content-center"></div>
                 <img src="{{image_url}}"  width="360px" height="300px" alt="">
             </div>
-            <p class="card-text">{{instrument}}</p>
+            <p class="card-text">{{brand_name}}</p>
             <div class="d-flex justify-content-center">
             </div>
             <div class="d-flex justify-content-between">
-                <div id="post-by">Posted by {{email}}</div>
+                <div id="post-by">Posted by {{user.email}}</div>
             </div>
         </div>
     </div>
