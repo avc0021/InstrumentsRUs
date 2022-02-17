@@ -11,11 +11,10 @@ router.get('/', withAuth, (req, res) => {
           user_id: req.session.user_id
       },
       attributes: [
-          'id',
-          'instrument',
-          'brand_name',
-          'price',
-          'url',
+        'id',
+        'title',
+        'description',
+        'image_url',
       ],
   })
   .then(dbPostData => {

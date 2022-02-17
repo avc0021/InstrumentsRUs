@@ -7,11 +7,9 @@ const withAuth = require('../../utils/auth');
 router.post('/', withAuth, (req, res) => {
     if (req.session) {
         Post.create({
-            instrument: req.body.instrument,
-            brand_name: req.body.brand_name,
-            price: req.body.price,
-            url: req.body.url,
-            user_id: req.session.user_id
+            title: req.body.title,
+            description: req.body.description,
+            image_url: req.body.url,
         })
         .then(dbPostData => res.json(dbPostData))
         .catch(err => {
