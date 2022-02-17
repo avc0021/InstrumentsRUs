@@ -108,6 +108,7 @@ footer {
   padding-bottom: 10;
 }
 
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -2212,6 +2213,10 @@ progress {
 }
 .form-label {
   margin-bottom: 0.5rem;
+}
+
+.form-group {
+  padding: 5px;
 }
 
 .col-form-label {
@@ -4800,18 +4805,28 @@ fieldset:disabled .btn {
   width: 25rem;
   margin-top: 50px;
   margin-bottom: 50px;
+  margin-left: 400px;
+}
+
+.card-columns {
+  display: inline-flex;
+  flex-wrap: wrap;
 }
 
 .card-body {
   width: 250px;
   height: 200px;
-  border: 1px solid black;
   vertical-align: middle;
   text-align: center;
-  display: table-cell;
+  
+}
+
+.description {
+  padding: 20px 0 0 0;
 }
 
 .card img {
+  padding: 0 0 0px 50px;
   justify-content: center;
 }
 
@@ -4826,6 +4841,10 @@ fieldset:disabled .btn {
   color: var(--prime-text-color);
   text-align: center;
   text-decoration: underline;
+}
+
+.login-card {
+  padding: 100px 0 0 400px;
 }
 
 .accordion-button {
@@ -5070,6 +5089,7 @@ fieldset:disabled .btn {
 .btn .badge {
   position: relative;
   top: -1px;
+  padding: 20px
 }
 
 .alert {
@@ -5252,7 +5272,7 @@ fieldset:disabled .btn {
 
 .list-group-item-action {
   width: 100%;
-  color: #495057;
+  color: #000;
   text-align: inherit;
 }
 .list-group-item-action:hover,
