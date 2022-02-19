@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instruments R Us!</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Instruments R Us</title>
+    <!-- Linking in CSS (using Bootstrap) -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- This script tag includes the Filestack API into your HTML file -->
+    <script type="text/javascript" src="https://static.filestackapi.com/v3/filestack.js"></script>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>
-                <a href="/">Instruments R Us!</a>
-            </h1>
-            <nav>
-                <a href ="/login">login</a>
-            </nav>
+    <header>
+    <div class="d-flex" id="wrapper">
+        <!-- navbar-->
+        <nav class="navbar navbar-dark bg-light">
+        <div class="border-end bg-grey" id="sidebar-wrapper">
+            <h1 class="sidebar-heading border-bottom bg-light">Instruments R Us</h1>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/">Home</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/dashboard">Dashboard</a>
+                {{#if loggedIn}}
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" id="logout" href="/">Log Out</a>
+                {{else}}
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/login">Login</a></li>
+                {{/if}}
+            </div>
+        </div>
+        </nav>
         </header>
-        <main>
-            {{{body}}}
-        </main>
-        <footer>
-            Thank you for visiting!
-        </footer>
-    </div>
+                <main>
+                    {{{body}}}
+                </main>
 
+                <footer class="container-fluid">
+                    Instruments R Us ™
+                </footer>
+            </div>
+        </div>
+    </div>
     {{#if loggedIn}}
-    <script src="/javascript/logout.js"></script>
+    <script src="/js/logout.js"></script>
     {{/if}}
 </body>
 
